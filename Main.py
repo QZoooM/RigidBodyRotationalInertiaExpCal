@@ -51,7 +51,7 @@ def Avg30T(t1, t2, t3):
 
 # ITheory
 def I_md2_SolidZhu(m, D):
-    return m * D**2 / 2
+    return m * D**2 / 8 # Here we use diameter instead of radius
 
 def I_mDoDi_EptZhu(m, Do, Di):
     return m * (Do**2 +Di**2) / 8
@@ -417,5 +417,6 @@ while (True):
         Utility()
     if (Var.SerIndex == 7):
         VarCheck()
+
 
         
